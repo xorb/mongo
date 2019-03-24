@@ -1,0 +1,17 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "dev": "ts-node-dev src"
+  },
+  "devDependencies": {
+    "ts-node-dev": "^1.0.0-pre.32",
+    "tslint": "^5.14.0",
+    "typescript": "^3.3.4000"
+  },
+  "dependencies": {
+    "@xorb/mongo": "^0.0.1"
+  }
+}
