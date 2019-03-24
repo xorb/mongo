@@ -1,6 +1,6 @@
 {
   "name": "@xorb/mongo",
-  "version": "0.0.1",
+  "version": "0.0.3",
   "description": "Minimal MongoDB client.",
   "author": "xorb <xorb@mail.com>",
   "homepage": "https://github.com/xorb/mongo",
@@ -24,6 +24,7 @@
     "dev": "microbundle watch",
     "prepublish": "yarn build",
     "prebuild": "cp ../../*.md . && cp ../../LICENSE . && rm -rf lib",
+    "postpublish": "rimraf lib && rimraf ./*.md && rimraf LICENSE",
     "build": "microbundle && rm -rf .rts2_cache_*",
     "lint": "tslint --project tsconfig.json -t codeFrame 'src/**/*.ts*'",
     "test": "jest"
@@ -40,5 +41,6 @@
   "dependencies": {
     "mongodb": "^3.2.2",
     "retry": "^0.12.0"
-  }
+  },
+  "gitHead": "688f70f526f773f6a10dcc8b4e710cc0bdd8c74e"
 }

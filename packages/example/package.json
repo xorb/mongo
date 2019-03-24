@@ -12,6 +12,7 @@
     "typescript": "^3.3.4000"
   },
   "dependencies": {
-    "@xorb/mongo": "^0.0.1"
-  }
+    "@xorb/mongo": "^0.0.3"
+  },
+  "gitHead": "688f70f526f773f6a10dcc8b4e710cc0bdd8c74e"
 }

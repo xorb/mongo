@@ -1,15 +1,23 @@
 import { mongo } from '@xorb/mongo'
 
-async function createClient() {
-  const uri = 'mongodb://'
+async function initDatabase() {
   try {
-    await mongo.connect(uri)
-    return 'Connected'
-  } catch (err) {
-    throw err
+    const uri = 'mongo://'
+    const db = await mongo.connect(uri)
+    // connected to database, do something is needed
+    const data = await db.collection('todos').find()
+  } catch {
+    // Something went wrong
   }
 }
 
-createClient()
-  .then(res => console.log(res))
-  .catch(e => console.log('e'))
+async function createTodo() {
+  try {
+    const db = await mongo.getDb()
+    const todo = { body: 'Hello world', completed: false }
+    const res = db.collection('todos').insertOne(todo)
+    // do more
+  } catch {
+    // handle errors
+  }
+}

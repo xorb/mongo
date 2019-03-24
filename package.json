@@ -1,9 +1,6 @@
 {
   "name": "root",
   "private": true,
-  "scripts": {
-    "publish": "cd packages/lib && yarn publish"
-  },
   "devDependencies": {
     "lerna": "^3.13.0"
   }

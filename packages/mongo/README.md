@@ -18,26 +18,27 @@ npm install @xorb/mongo --save
 
 ```javascript
 // index.js
-import { mongo } from '@xorb/mongo'
+import { mongo } from "@xorb/mongo";
 
-async function initDatabase() {
+const uri = "mongo://";
+
+async function drop() {
   try {
-    const uri = 'mongo://'
-    const db = await mongo.connect(uri)
+    const db = await mongo.connect(uri);
     // connected to database, do something is needed
-    const data = await db.collection('todos').find()
+    const data = await db.collection("todos").find();
   } catch {
     // Something went wrong
   }
 }
 
 // controller.js
-import { mongo } from '@xorb/mongo'
+import { mongo } from "@xorb/mongo";
+
 async function createTodo() {
   try {
-    const db = await mongo.getDb()
-    const todo = { body: 'Hello world', completed: false }
-    const res = db.collection('todos').insertOne(todo)
+    const db = await mongo.getDb();
+    const res = db.collection("todos").insertOne(todo);
     // do more
   } catch {
     // handle errors
