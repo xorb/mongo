@@ -12,10 +12,10 @@
   resolved "https://registry.yarnpkg.com/@types/strip-json-comments/-/strip-json-comments-0.0.30.tgz#9aa30c04db212a9a0649d6ae6fd50accc40748a1"
   integrity sha512-7NQmHra/JILCd1QqpSzl8+mJRc8ZHz3uDm8YV1Ks9IhK0epEiTw8aIErbvH9PI+6XbqhyIQy3462nEsn7UVzjQ==
 
-"@xorb/mongo@^0.0.1":
-  version "1.0.0"
-  resolved "https://registry.yarnpkg.com/@xorb/mongo/-/mongo-1.0.0.tgz#38576855203dd443bfd3f27adea2d0b03864d242"
-  integrity sha512-aR/2QNBkHgA/eUz7Q5+/UCmX1VV4AXB/LRPvPGJPEGqOhfC4nRuoFaJ5XFTWS6EmOQ3xlMimqcTN3zpbJIBD7A==
+"@xorb/mongo@^0.0.3":
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/@xorb/mongo/-/mongo-0.0.3.tgz#e759e2a886f024ae27c15bd81bf827966bdd0368"
+  integrity sha512-w9qQmk8mZ4N+Mol/BInH61zusEG5bua8kv/xbWPMIqfjIZ7fteYDB3r0NVJeYmOW2+AuJAtrIQiIhCvhwtYhiA==
   dependencies:
     mongodb "^3.2.2"
     retry "^0.12.0"
@@ -360,9 +360,9 @@ js-tokens@^3.0.2:
   integrity sha1-mGbfOVECEw449/mWvOtlRDIJwls=
 
 js-yaml@^3.7.0:
-  version "3.13.0"
-  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.0.tgz#38ee7178ac0eea2c97ff6d96fff4b18c7d8cf98e"
-  integrity sha512-pZZoSxcCYco+DIKBTimr67J6Hy+EYGZDY/HCWC+iAEA9h1ByhMXAIVUXMcMFpOCxQ/xjXmPI2MkDL5HRm5eFrQ==
+  version "3.13.1"
+  resolved "https://registry.yarnpkg.com/js-yaml/-/js-yaml-3.13.1.tgz#aff151b30bfdfa8e49e05da22e7415e9dfa37847"
+  integrity sha512-YfbcO7jXDdyj0DGxYVSlSeQNHbD7XPWvrVWeVUujrQEoZzWJIRrCPoyk6kL6IAjAG2IolMK4T0hNUe0HOUs5Jw==
   dependencies:
     argparse "^1.0.7"
     esprima "^4.0.0"
